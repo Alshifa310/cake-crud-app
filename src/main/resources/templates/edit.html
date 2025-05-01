@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a th:href="@{/}" >Home</a></li>
+            <li><a th:href="@{/add}" class="active" >Edit Cake</a></li>
+            <li><a th:href="@{/view}" >View Cakes</a></li>
+            <li><a th:href="@{/stats}">Stats</a></li>
+        </ul>
+    </nav>
+<form th:action="@{/edit}" method="post" th:object="${cake}">
+<input type = "hidden" th:field= "*{id}">
+        Name: <input type="text" th:field="*{name}" /><br> 
+        
+        Price: <input type="number" step="0.01" th:field="*{price}" /><br>
+        Main Flavor: <input type="text" th:field="*{mainflavour}" /><br> 
+        
+        Dietary: <input type="text" th:field="*{dietary}" /><br>
+        Calories: <input type="number" step="0.01" th:field="*{calories}" /><br>
+        
+  		Theme: <input type="text" th:field="*{theme}" /><br> 
+  		Size :  <input type="number" step="0.01"  th:field="*{size}" /><br> <br>
+        <input type="submit" value="Edit Cake" />
+    </form>
+  
+  
+
+</body>
+</html>

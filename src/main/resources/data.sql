@@ -1,0 +1,22 @@
+INSERT INTO cakes (name, price, mainflavour, dietary, calories, theme, size) 
+VALUES 
+('Chocolate Delight', 25.99, 'Chocolate', 'Gluten Free', 350.00, 'Birthday', 8.0),
+('Strawberry Sensation', 28.50, 'Strawberry', 'Vegan', 320.45, 'Anniversary', 7.5),
+('Pineapple Paradise', 30.00, 'Pineapple', 'Nuts Free', 400.66, 'Kids Birthday', 10.0),
+('Vanilla Dream', 22.75, 'Vanilla', 'Vegetarian', 300.00, 'Baby Shower', 6.0),
+('Mocha Magic', 27.99, 'Mocha', 'Halal', 380.00, 'Any Success', 9.0),
+('Red Velvet Surprise', 35.00, 'Red Velvet', 'No Egg', 450.00, 'Modified By Yourself', 12.0),
+('Lemon Twist', 20.00, 'Lemon', 'Gluten Free', 290.12, 'Birthday', 8.5),
+('Coconut Bliss', 24.99, 'Coconut', 'Vegan', 330.11, 'Anniversary', 7.0),
+('Caramel Crunch', 32.50, 'Caramel', 'Nuts Free', 420.00, 'Kids Birthday', 11.0),
+('Blueberry Burst', 29.99, 'Blueberry', 'Vegetarian', 360.00, 'Baby Shower', 8.0),
+('Mango Melody', 26.75, 'Mango', 'Halal', 310.00, 'Any Success', 9.5),
+('Peach Perfection', 33.00, 'Peach', 'No Egg', 370.85, 'Modified By Yourself', 10.5),
+('Raspberry Rapture', 31.50, 'Raspberry', 'Gluten Free', 340.00, 'Birthday', 7.5),
+('Almond Amaretto', 28.00, 'Almond', 'Vegan', 390.00, 'Anniversary', 9.0),
+('Hazelnut Harmony', 34.75, 'Hazelnut', 'Nuts Free', 450.00, 'Kids Birthday', 12.0),
+('Matcha Magic', 27.25, 'Matcha', 'Vegetarian', 310.00, 'Baby Shower', 8.0),
+('Cinnamon Swirl', 30.50, 'Cinnamon', 'Halal', 400.00, 'Any Success', 10.0),
+('Pumpkin Spice', 25.00, 'Pumpkin', 'No Egg', 350.00, 'Modified By Yourself', 8.5),
+('Lavender Delight', 29.75, 'Lavender', 'Gluten Free', 320.90, 'Birthday', 7.0),
+('Choco-Mint Fusion', 33.99, 'Chocolate Mint', 'Vegan', 380.00, 'Anniversary', 9.5);

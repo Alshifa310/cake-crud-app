@@ -1,0 +1,43 @@
+# Eclipse-specific files
+*.classpath
+*.project
+*.settings/
+.apt_generated/
+.factorypath/
+
+# Maven-specific files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot-specific files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+
+# VS Code-specific files
+.vscode/
+
+# IntelliJ IDEA-specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans-specific files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Build directories
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# OS-specific files
+Thumbs.db
+.DS_Store

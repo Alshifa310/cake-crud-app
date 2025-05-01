@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a th:href="@{/}" class="active">Home</a></li>
+            <li><a th:href="@{/add}" >Add Cake</a></li>
+            <li><a th:href="@{/view}">View Cakes</a></li>
+            <li><a th:href="@{/stats}">Stats</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h1>Celebrate Life's Sweet Moments with the Perfect Cake
+        </h1>
+        <div class="buttons">
+            <a th:href="@{/add}" class="button" >Add New Flavour</a>
+           <a th:href="@{/view}" class="button" >Customize Now</a>
+        </div>
+    </section>
+
+ 
+</body>
+</html>

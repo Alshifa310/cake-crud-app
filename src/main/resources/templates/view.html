@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a th:href="@{/}" >Home</a></li>
+            <li><a th:href="@{/add}" >Add Cake</a></li>
+            <li><a th:href="@{/view}" class="active">View Cakes</a></li>
+            <li><a th:href="@{/stats}">Stats</a></li>
+        </ul>
+    </nav>
+<table>
+        <tr>
+        <th> ID </th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Main Flavor</th>
+            <th>Dietary</th>
+            <th>Calories</th>
+            <th>Theme</th>
+            <th>Size in Inches</th>
+        </tr>
+        <tr th:each="c : ${cakeList}">
+        	<td th:text="${c.id}"></td>
+            <td th:text="${c.name}"></td>
+            <td th:text="${c.price}"></td>
+            <td th:text="${c.mainflavour}"></td>
+            <td th:text="${c.dietary}"></td>
+            <td th:text="${c.calories}"></td>
+            <td th:text="${c.theme}"></td>
+            <td th:text="${c.size}"></td>
+            <td> <a th:href="@{/edit/{id}(id= ${c.id})}" > Edit</a></td>
+            <td> <a th:href= "@{/delete/{id}(id= ${c.id})}"> Delete</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
